@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiruni Wijerathna - Profile</title>
+
+    <!-- box icone-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <a href="#" class="logo">Hiruni</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Hi, I'm Hiruni Wijerathna</h1>
+            <p>Software Engineer | Student | Tech Enthusiast</p>
+        </div>
+        <img src="imae1.png" alt="Hiruni Wijerathna">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="imge2.jpg" alt="About Me">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I am a Software Engineering undergraduate at Sabaragamuwa University of Sri Lanka, 
+                passionate about technology, software development, and innovation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>Java, Python, PHP, JavaScript</p>
+            </div>
+            <div class="skill">
+                <h3>Frameworks</h3>
+                <p>React, Node.js, Express, Django</p>
+            </div>
+            <div class="skill">
+                <h3>Tools</h3>
+                <p>Git, Docker, Selenium, Jenkins</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>E-Library Management System</h3>
+            <p>A web-based system for managing e-books with features like user registration, book management, and testing with Selenium.</p>
+        </div>
+        <div class="project-card">
+            <h3>BeastBuddy</h3>
+            <p>A platform to streamline animal rescue efforts and enhance veterinary support, developed with PHP, MySQL, and JavaScript.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hiruni Wijerathna</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
