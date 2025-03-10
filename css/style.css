@@ -20,7 +20,7 @@
 
 html {
     font-size: 62.5%;
-    overflow: hidden;
+ 
 
 }
 
@@ -171,8 +171,9 @@ span{
     background: var(--second-bg-color);
 }
 
-.about-img{
+.about-img img{
     width: 35vw;
+    
 }
 
 .heading {
