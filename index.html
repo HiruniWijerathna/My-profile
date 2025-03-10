@@ -46,14 +46,14 @@
         </div>
 
         <div class="home-img">
-        <img src="image/imge1.jpg" alt="Hiruni Wijerathna">
+        <img src="image/profile.jpg" alt="Hiruni Wijerathna">
         </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="image/image.jpg" alt="About Me">
+            <img src="image/profile.jpg" alt="About Me">
         </div>
         
         <div class="about-content">
@@ -102,7 +102,7 @@
 
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="image/ima4ge1.jpg" alt="pp">
+                <img src="image/profile.jpg" alt="pp">
                 <div class="porfolio-layer">
                     <h4>Web Design</h4>
                     <p>Technologies: Node.js, React, MongoDB, Features: Online ordering, payments, delivery tracking</p>
@@ -111,7 +111,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="image/ima4ge1.jpg" alt="pp">
+                <img src="image/profile.jpg" alt="pp">
                 <div class="porfolio-layer">
                     <h4>Web Design</h4>
                     <p>Technologies: Node.js, React, MongoDB, Features: Online ordering, payments, delivery tracking</p>
@@ -120,7 +120,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="image/ima4ge1.jpg" alt="pp">
+                <img src="image/profile.jpg" alt="pp">
                 <div class="porfolio-layer">
                     <h4>Web Design</h4>
                     <p>Technologies: Node.js, React, MongoDB, Features: Online ordering, payments, delivery tracking</p>
@@ -132,23 +132,33 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="inpit-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="inpit-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
+            <input type="submit" value="Send Massage" class="btn">
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Hiruni Wijerathna</p>
+    <footer class="footer">
+        <div class="footer-text">
+         <p> Copyright &copy; 2025 Hiruni Wijerathna | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
