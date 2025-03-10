@@ -60,6 +60,11 @@ section{
     cursor: default;
 }
 
+.logo-img img{
+    width: 6vw;
+    
+}
+
 
 .navbar a{
     font-size: 1.7rem;
