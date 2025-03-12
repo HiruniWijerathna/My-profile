@@ -60,3 +60,43 @@ const typed = new Typed('.multiple-text',{
     loop: true
 
 });
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".portfolio-container");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    prevBtn.addEventListener("click", function () {
+        container.scrollBy({ left: -320, behavior: "smooth" });
+    });
+
+    nextBtn.addEventListener("click", function () {
+        container.scrollBy({ left: 320, behavior: "smooth" });
+    });
+});
+
+const resumeBtns = document.querySelectorAll('.resume-btn');
+
+resumeBtns.forEach((btn, idx) => {
+    btn.addEventListener('click',() => {
+        const resumeDetails = document.querySelectorAll('.resume-detail');
+
+        resumeBtns.forEach(btn => {
+            btn.classList.remove('active');
+        });
+        btn.classList.add('active');
+
+        resumeDetails.forEach(detail => {
+            detail.classList.remove('active');
+        });
+        resumeDetails[idx].classList.add('active');
+    });
+});
+
+
+
+
