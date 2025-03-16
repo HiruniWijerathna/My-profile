@@ -357,8 +357,8 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.1),var(--main-color));
-    color: black;
+    background: linear-gradient(rgba(240, 255, 255, 0.8),var(--main-color));
+    color:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -377,7 +377,7 @@ span{
 }
 
 .about-img img{
-    width: 17vw;
+    width: 18vw;
     
 }
 
@@ -444,6 +444,7 @@ span{
     margin:1rem 0 3rem ;
 }
 
+
 .portfolio{
     background: var(--second-bg-color);
 }
@@ -453,41 +454,10 @@ span{
 }
 
 .portfolio-container{
-    display: flex;
-    overflow-x:auto;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
-}
-
-.portfolio-box {
-    flex: 0 0 auto;
-    width: 300px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-}
-
-.portfolio-box:hover {
-    transform: scale(1.05);
-}
-
-/* Arrow Buttons */
-.scroll-btn {
-    background: #222;
-    color: white;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 24px;
-    position: absolute;
-    z-index: 10;
-}
-
-#prevBtn {
-    left: 0;
-}
-
-#nextBtn {
-    right: 0;
 }
 
 .portfolio-container .portfolio-box {
@@ -501,7 +471,6 @@ span{
 .portfolio-box img {
     width:100%;
     transition: .5s ease;
-    
 }
 
 .portfolio-box:hover img {
@@ -514,8 +483,7 @@ span{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1),var(--main-color));
-    
+    background: linear-gradient(rgba(0,0,0, .1),var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -554,8 +522,26 @@ span{
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+.social-media-2 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
 
-
+.social-media-2 a:hover{
+    background: white;
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
 
 
 .contact{
