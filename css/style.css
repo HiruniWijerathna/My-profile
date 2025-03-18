@@ -762,6 +762,56 @@ span{
 
 
 /* Main Contact Section */
+
+.contact3{
+    background: var(--bg-color);
+
+}
+
+.contact3 h2 {
+    margin-bottom: 3rem;
+
+}
+
+.contact3 form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact3 form .inpit-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact3 form .inpit-box input,
+.contact3 form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+
+}
+
+.contact3 form .inpit-box input{
+    width: 49%;
+}
+
+.contact3 form textarea {
+    resize: none;
+}
+
+.contact3 form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
 .contact-container {
     display: flex;
     justify-content: space-between;
