@@ -217,16 +217,46 @@ span{
     text-align: left;
 }
 
-.resume-list{
-    display: grid;
+/* Default Styles for Larger Screens */
+.resume-list {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 2rem;
+    gap: 3rem;
     height: 45rem;
     overflow: auto;
 }
 
+.resume-list .resume-item {
+    background: var(--second-bg-color);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    height: calc((40rem - 2rem) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+
+.resume-item .year {
+    color: var(--main-color);
+    font-size: 1.8rem;
+}
+
+.resume-item h3 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.resume-item .company {
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+/* Scrollbar Styles */
 .resume-list::-webkit-scrollbar {
-    width: .7rem;
+    width: 0.8rem;
 }
 
 .resume-list::-webkit-scrollbar-thumb {
@@ -234,11 +264,88 @@ span{
     border-radius: 1rem;
 }
 
-.resume-list:hover::-webkit-scrollbar-thumb{
+.resume-list:hover::-webkit-scrollbar-thumb {
     background: var(--main-color);
 }
 
-.resume-list .resume-item {
+
+
+
+/* Media Query for Smaller Screens (Phones) */
+@media (max-width: 768px) {
+    .resume-list {
+        gap: 2rem; /* Reduce gap on smaller screens */
+        height: 45rem; /* Adjust height to fit the content */
+    }
+
+    .resume-item {
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        margin-bottom: 1.5rem; /* Reduce bottom margin */
+    }
+
+    .resume-item .year {
+        font-size: 1.6rem; /* Adjust font size */
+    }
+
+    .resume-item h3 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .resume-item .company {
+        font-size: 1.4rem; /* Adjust font size */
+    }
+    .pdf-img{
+        width: 20px;
+    }
+}
+
+/* Media Query for Extra Small Screens (Phones in Portrait Mode) */
+@media (max-width: 480px) {
+    .resume-item {
+        padding: 1rem; /* Reduce padding more on very small screens */
+        height: 45rem;
+    }
+
+    .resume-item .year {
+        font-size: 1.4rem; /* Adjust font size */
+    }
+
+    .resume-item h3 {
+        font-size: 1.8rem; /* Adjust font size */
+    }
+
+    .resume-item .company {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .resume-list {
+        gap: 1.5rem; /* Reduce gap for even smaller screens */
+    }
+}
+
+.resume-list2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    height: 45rem;
+    overflow: auto;
+}
+
+.resume-list2::-webkit-scrollbar {
+    width: .7rem;
+}
+
+.resume-list2::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 1rem;
+}
+
+.resume-list2:hover::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+
+.resume-list2 .resume-item2 {
     background: var(--second-bg-color);
     border-radius: .8rem;
     padding: 3rem 2.5rem;
@@ -248,52 +355,29 @@ span{
     justify-content: center;
 }
 
-.resume-item .year{
-    color: var(--main-color);
-}
 
-.resume-item h3{
-    font-size: 2.2rem;
-}
-
-.resume-item .company{
-    position: relative;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-}
-
-.resume-item .company::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    padding: .5rem;
-    background: var(--main-color);
-    border-radius: 50%;
-    margin-left:-2rem ;
-}
-
-.resume-detail.skills .resume-list{
+.resume-detail.skills .resume-list2{
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     height: auto;
     overflow: visible;
 }
 
-.resume-detail.skills .resume-item{
+.resume-detail.skills .resume-item2{
     position: relative;
     align-items: center;
     height: auto;
 }
 
-.resume-detail.skills .resume-item i{
+.resume-detail.skills .resume-item2 i{
     font-size: 8.5rem;
     transition: .5s;
 }
 
-.resume-detail.skills .resume-item:hover i{
+.resume-detail.skills .resume-item2:hover i{
     color: var(--main-color);
 }
 
-.resume-detail.skills .resume-item span{
+.resume-detail.skills .resume-item2 span{
     position: absolute;
     top: -20%;
     background: var(--text-color);
@@ -307,51 +391,51 @@ span{
     transition: .2s;
 }
 
-.resume-detail.skills .resume-item:hover span{
+.resume-detail.skills .resume-item2:hover span{
     top: -25%;
     opacity: 1;
     transform: scale(1)
 }
 
-.resume-detail.about .resume-list{
+.resume-detail.about .resume-list2{
     height: auto;
     grid-template-columns: repeat((auto-fit, minmax(25rem, 1fr)));
 }
 
-.resume-detail.about .resume-item{
+.resume-detail.about .resume-item2{
     height: auto;
     padding: 0 0 .5rem;
     background: transparent;
 }
 
-.resume-detail.about .resume-item p{
+.resume-detail.about .resume-item2 p{
     color: var(--main-color);
 }
 
-.resume-detail.about .resume-item p span{
+.resume-detail.about .resume-item2 p span{
     color: var(--text-color);
     margin-left: 1rem;
     font-size: 1.8rem;
 }
 
-.resume-item {
+.resume-item2 {
     position: relative;
     display: inline-block;
    
 }
 
-.resume-item img {
+.resume-item2 img {
  
     transition: transform 0.3s ease;
     width: 100%;
     
 }
 
-.resume-item img:hover {
+.resume-item2 img:hover {
     transform: scale(1.1);
 }
 
-.resume-item .porfolio-layer {
+.resume-item2 .porfolio-layer {
     position: absolute;
     top: 0;
     left: 0;
@@ -371,7 +455,7 @@ span{
 }
 
 
-.resume-item:hover .porfolio-layer {
+.resume-item2:hover .porfolio-layer {
     opacity: 1;
     
 }
