@@ -169,6 +169,19 @@ span{
     box-shadow: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .resume-conttainer{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -270,39 +283,6 @@ span{
 }
 
 
-
-
-/* Media Query for Smaller Screens (Phones) */
-@media (max-width: 768px) {
-    .resume-list {
-        gap: 2rem; /* Reduce gap on smaller screens */
-        height: 45rem; /* Adjust height to fit the content */
-    }
-
-    .resume-item {
-        padding: 1.5rem; /* Reduce padding for smaller screens */
-        height: auto; /* Allow height to adjust based on content */
-        margin-bottom: 1.5rem; /* Reduce bottom margin */
-    }
-
-    .resume-item .year {
-        font-size: 1.6rem; /* Adjust font size */
-    }
-
-    .resume-item h3 {
-        font-size: 2rem; /* Adjust font size */
-    }
-
-    .resume-item .company {
-        font-size: 1.4rem; /* Adjust font size */
-    }
-    .pdf-img{
-        width: 20px;
-    }
-}
-
-
-
 .title-with-logo {
   display: flex;
   align-items: center;
@@ -329,58 +309,6 @@ span{
   object-fit: cover;
 }
 
-/* 📱 Mobile adjustments */
-@media (max-width: 600px) {
-  .title-with-logo {
-    flex-direction: column; /* stack logo above text */
-    align-items: flex-start; /* align text nicely */
-    gap: 10px;
-  }
-
-  .logo-circle {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 5px;
-  }
-
-  .resume-item {
-    padding: 15px;
-  }
-
-  .resume-item h3 {
-    font-size: 16px;
-  }
-
-  .resume-item .company {
-    font-size: 14px;
-  }
-}
-
-
-
-/* Media Query for Extra Small Screens (Phones in Portrait Mode) */
-@media (max-width: 480px) {
-    .resume-item {
-        padding: 1rem; /* Reduce padding more on very small screens */
-        height: 45rem;
-    }
-
-    .resume-item .year {
-        font-size: 1.4rem; /* Adjust font size */
-    }
-
-    .resume-item h3 {
-        font-size: 1.8rem; /* Adjust font size */
-    }
-
-    .resume-item .company {
-        font-size: 1.2rem; /* Adjust font size */
-    }
-
-    .resume-list {
-        gap: 1.5rem; /* Reduce gap for even smaller screens */
-    }
-}
 
 .resume-list2{
     display: grid;
@@ -587,6 +515,74 @@ span{
     font-size: 1.6rem;
     margin:1rem 0 3rem ;
 }
+
+
+/* For tablets and phones */
+@media (max-width: 768px) {
+    .resume-list {
+        grid-template-columns: 1fr; /* stack items vertically */
+        height: auto; /* let height adjust */
+        gap: 2rem;
+    }
+
+    .resume-item {
+        height: auto; /* remove fixed height */
+        padding: 1.5rem;
+        height: 45rem;
+    }
+
+    .resume-item h3 {
+        font-size: 2rem;
+    }
+
+    .resume-item .company {
+        font-size: 1.4rem;
+    }
+
+    .resume-item .year {
+        font-size: 1.6rem;
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+    .resume-list {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        height: auto;
+    }
+
+    .resume-item {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .resume-item h3 {
+        font-size: 1.8rem;
+    }
+
+    .resume-item .company {
+        font-size: 1.2rem;
+    }
+
+    .resume-item .year {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .portfolio{
@@ -1083,3 +1079,19 @@ span{
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
