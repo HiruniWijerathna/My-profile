@@ -530,20 +530,20 @@ span{
     .resume-item {
         height: auto; /* remove fixed height */
         padding: 1.5rem;
-        height: 45rem;
+        height: 40rem;
         width: 100%;
     }
 
     .resume-item h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .resume-item .company {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .resume-item .year {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 
      .title-with-logo {
@@ -603,15 +603,14 @@ span{
 
     .resume-item {
         width: 100%;
-        background-color: #1e1f25; /* optional: to match your dark theme */
         border-radius: 12px;
         padding: 1rem;
         box-sizing: border-box;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        
     }
 
     .resume-item .year {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: #00aaff;
         margin-bottom: 0.5rem;
     }
@@ -642,20 +641,20 @@ span{
     }
 
     .resume-item h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 1.4;
         margin: 0;
         color: #fff;
     }
 
     .resume-item .company {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         color: #ccc;
         margin-top: 0.3rem;
     }
 
-    h2.headig {
-        font-size: 1.5rem;
+        h2.headig {
+        font-size: 4rem;
         text-align: center;
         line-height: 1.4;
     }
