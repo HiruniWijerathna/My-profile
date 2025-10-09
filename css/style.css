@@ -316,7 +316,7 @@ span{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
-    height: 45rem;
+    height: 50rem;
     overflow: auto;
 }
 
@@ -448,6 +448,94 @@ span{
     
 }
 
+
+
+/* ===== Skills Section ===== */
+
+.skills .headig {
+ margin-bottom: 10px;
+}
+/* Skill List Grid */
+.resume-list3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  height: 50rem;
+  overflow: auto;
+
+    
+}
+
+/* Skill Item */
+.resume-item3 {
+  background-color: var(--second-bg-color);
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: default;
+  width: 100%;
+  max-width: 160px;
+  text-align: center;
+}
+
+.resume-item3:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.resume-item3 i {
+  font-size: 4rem;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.resume-item3 span {
+  display: block;
+  font-weight: 600;
+    color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+/* Scrollbar Styles */
+.resume-list3::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+.resume-list3::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 1rem;
+}
+
+.resume-list3:hover::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+/* Soft Skills List */
+.soft-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.soft-skills li {
+  background: var(--second-bg-color);
+  border-radius: 10px;
+  padding: 12px 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.soft-skills li:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+
+/* About Section */
+
 .about-img img{
     width: 15vw;
     
@@ -578,17 +666,56 @@ span{
         margin-top: 0.3rem;
     }
 
-     .resume-item2 p  {
-        font-size: 1.6rem;
-        line-height: 1.4;
-        margin: 0;
-        color: #fff;
-    }
+     
     .resume-detail.about .resume-item2 p span{
         
         margin-left: 1rem;
         font-size: 1.6rem;
     }
+
+    /* ===== Skills Section (Smaller Version) ===== */
+
+
+   .resume-list3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two items per row */
+    gap: 15px;
+    justify-items: center;
+    }
+
+
+    /* Skill Item */
+    .resume-item3 {
+    background-color: var(--second-bg-color);
+    border-radius: 15px;
+    padding: 12px;
+    transition: all 0.3s ease;
+    cursor: default;
+    width: 100%;
+    max-width: 130px;
+    text-align: center;
+    }
+
+    .resume-item3:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .resume-item3 i {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 6px;
+    }
+
+    .resume-item3 span {
+    display: block;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    }
+
+
+    
     
 }
 
@@ -600,6 +727,10 @@ span{
         gap: 1rem;
         padding: 0 1rem;
     }
+
+    .resume-box .resume-detail h2{
+    font-size: 2rem;
+}
 
     .resume-item {
         width: 100%;
@@ -653,6 +784,16 @@ span{
         margin-top: 0.3rem;
     }
 
+     .resume-detail.about .resume-item2 p span{
+        
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+     .resume-detail.about  p {
+        
+         font-size: 1.4rem;
+    }
+
         h2.headig {
         font-size: 4rem;
         text-align: center;
@@ -664,6 +805,49 @@ span{
         text-align: center;
         margin-bottom: 1rem;
     }
+
+
+    /* ===== Skills Section (Smaller Version) ===== */
+
+
+   .resume-list3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two items per row */
+    gap: 15px;
+    justify-items: center;
+}
+
+
+    /* Skill Item */
+    .resume-item3 {
+    background-color: var(--second-bg-color);
+    border-radius: 15px;
+    padding: 12px;
+    transition: all 0.3s ease;
+    cursor: default;
+    width: 100%;
+    max-width: 130px;
+    text-align: center;
+    }
+
+    .resume-item3:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .resume-item3 i {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-bottom: 6px;
+    }
+
+    .resume-item3 span {
+    display: block;
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 1rem;
+    }
+
 }
 
 
