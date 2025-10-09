@@ -634,6 +634,9 @@ span{
     
 }
 
+.resume-box .resume-btn{
+    height: 5rem;
+}
     .resume-item {
         height: auto; /* remove fixed height */
         padding: 1.5rem;
