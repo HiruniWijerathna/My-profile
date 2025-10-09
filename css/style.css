@@ -546,11 +546,10 @@ span{
         font-size: 1.7rem;
     }
 
-     .title-with-logo {
+    .title-with-logo {
         display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        flex-wrap: nowrap;
+        align-items: flex-start;  /* align logo to top of text */
+        gap: 1rem;
     }
 
     .logo-circle {
@@ -615,11 +614,11 @@ span{
         margin-bottom: 0.5rem;
     }
 
+    
     .title-with-logo {
         display: flex;
-        align-items: center;
+        align-items: flex-start;  /* align logo to top of text */
         gap: 0.8rem;
-        flex-wrap: nowrap;
     }
 
     .logo-circle {
