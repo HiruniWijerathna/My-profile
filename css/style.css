@@ -827,9 +827,11 @@ span{
         margin-bottom: 1rem;
     }
      .resume-list2 {
-        grid-template-columns: repeat(1, 1fr); /* two items per row */
+        grid-template-columns: repeat(1, 1fr);
+        
         }
 
+    
 
     /* ===== Skills Section (Smaller Version) ===== */
 
@@ -1109,6 +1111,10 @@ span{
     .footer{
         padding: 2rem 3%;
     }
+
+    .logo-img img{
+    width: 9vw;
+   }
      
 }
 
@@ -1193,6 +1199,17 @@ span{
     .contact from .input-box input{
         width: 100%;
     }
+
+    .social-media a {
+    margin: 2rem 1rem 3rem 0;
+   }
+
+    .logo-img img{
+    width: 9vw;
+   }
+
+    
+
 }
 
 @media (max-width: 365px){
