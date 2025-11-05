@@ -910,6 +910,7 @@ span{
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
+    
 }
 
 .portfolio-container .portfolio-box {
@@ -977,6 +978,34 @@ span{
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+
+/* Scrollbar Styles */
+.portfolio-container {
+    max-height: 950px; /* adjust based on your layout */
+    overflow-y: auto;  /* enables vertical scroll */
+    padding-right: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Default scrollbar (hidden look) */
+.portfolio-container::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+/* Thumb is transparent by default */
+.portfolio-container::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 1rem;
+    transition: background 0.3s ease;
+}
+
+/* Show colored thumb on hover */
+.portfolio-container:hover::-webkit-scrollbar-thumb {
+    background: var(--main-color); /* use your theme color */
+}
+
+
+
 .social-media-2 a {
     display: inline-flex;
     justify-content: center;
