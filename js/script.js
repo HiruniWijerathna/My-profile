@@ -99,4 +99,25 @@ resumeBtns.forEach((btn, idx) => {
 
 
 
+const portfolioContainer = document.getElementById("portfolioContainer");
+  const scrollLeftBtn = document.getElementById("scrollLeft");
+  const scrollRightBtn = document.getElementById("scrollRight");
+
+  // Scroll left
+  scrollLeftBtn.addEventListener("click", () => {
+    portfolioContainer.scrollBy({
+      left: -450, // adjust scroll amount
+      behavior: "smooth",
+    });
+  });
+
+  // Scroll right
+  scrollRightBtn.addEventListener("click", () => {
+    portfolioContainer.scrollBy({
+      left: 450, // adjust scroll amount
+      behavior: "smooth",
+    });
+  });
+
+
 
