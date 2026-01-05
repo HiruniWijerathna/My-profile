@@ -99,4 +99,22 @@ resumeBtns.forEach((btn, idx) => {
 
 
 
+function showPortfolio(type) {
+    const web = document.getElementById("web-projects");
+    const uiux = document.getElementById("uiux-projects");
+    const buttons = document.querySelectorAll(".portfolio-buttons button");
+
+    if (type === "web") {
+        web.style.display = "grid";
+        uiux.style.display = "none";
+    } else {
+        web.style.display = "none";
+        uiux.style.display = "grid";
+    }
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+    event.target.classList.add("active");
+}
+
+
 

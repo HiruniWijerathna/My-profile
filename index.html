@@ -424,7 +424,13 @@
 <section class="portfolio" id="portfolio">
     <h2 class="heading">Latest <span>Project</span></h2>
 
-    <div class="portfolio-container">
+      <!-- Buttons -->
+    <div class="portfolio-buttons">
+        <button class="active" onclick="showPortfolio('web')">Development Projects</button>
+        <button onclick="showPortfolio('uiux')">Design Projects</button>
+    </div>
+
+   <div id="web-projects" class="portfolio-container">
         <div class="portfolio-box">
             <img src="image/1.1.jpg" alt="pp">
             <div class="porfolio-layer">
@@ -591,13 +597,54 @@
 
             </div>
         </div>
-
-        
+  
 
    
            
         
      
+    </div>
+
+
+
+
+    <!-- ================= UI / UX PROJECTS ================= -->
+    <div id="uiux-projects" class="portfolio-container" style="display:none;">
+
+        <!-- UI/UX Project 1 -->
+        <div class="portfolio-box">
+            <img src="image/uiux1.png" alt="UI UX">
+            <div class="porfolio-layer">
+                <h4>Food Delivery App UI</h4>
+                <p>
+                    Mobile-first UI/UX design created in Figma.
+                    Focused on usability, clean layout, and smooth user flow.
+                </p>
+                <div class="social-media-2">
+                    <a href="https://www.figma.com/proto/YOUR_LINK" target="_blank">
+                        <i class='bx bx-link'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- UI/UX Project 2 -->
+        <div class="portfolio-box">
+            <img src="image/uiux2.png" alt="UI UX">
+            <div class="porfolio-layer">
+                <h4>E-Commerce App UI</h4>
+                <p>
+                    High-fidelity Figma prototype including wireframes,
+                    components, and interactive flows.
+                </p>
+                <div class="social-media-2">
+                    <a href="https://www.figma.com/file/YOUR_LINK" target="_blank">
+                        <i class='bx bx-link'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
  
 </section>
