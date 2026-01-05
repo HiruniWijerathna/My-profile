@@ -99,7 +99,7 @@ resumeBtns.forEach((btn, idx) => {
 
 
 
-function showPortfolio(type) {
+function showPortfolio(type, btn) {
     const web = document.getElementById("web-projects");
     const uiux = document.getElementById("uiux-projects");
     const buttons = document.querySelectorAll(".portfolio-buttons button");
@@ -113,7 +113,7 @@ function showPortfolio(type) {
     }
 
     buttons.forEach(btn => btn.classList.remove("active"));
-    event.target.classList.add("active");
+    btn.classList.add("active");
 }
 
 
