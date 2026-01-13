@@ -32,4 +32,4 @@ This portfolio serves as a central hub to showcase:
 ## 🔗 Live Demo
 
 🌍 [View Portfolio Website](https://hiruniwijerathna.github.io/My-profile/)  
-> Replace with your actual live link
+
