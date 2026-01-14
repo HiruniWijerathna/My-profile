@@ -1289,7 +1289,7 @@ span{
     }
 
     .social-media a {
-    margin: 2rem .5rem 1rem 0;
+    margin: 2rem .8rem 1rem 0;
    }
 
     .logo-img img{
@@ -1298,6 +1298,14 @@ span{
 
     
 
+}
+
+@media (max-width: 380px){
+    .social-media a {
+    margin: 2rem .5rem 1rem 0;
+     width: 3.8rem;
+    height: 3.8rem;
+   }
 }
 
 @media (max-width: 365px){
