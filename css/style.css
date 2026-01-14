@@ -1295,21 +1295,18 @@ span{
     .logo-img img{
     width: 9vw;
    }
-
-    
-
 }
 
 @media (max-width: 380px){
     .social-media a {
-    margin: 2rem .5rem 2rem 0;
+    margin: 2rem .5rem 3rem 0;
      width: 3.8rem;
     height: 3.8rem;
    }
 }
 @media (max-width: 320px){
     .social-media a {
-    margin: 2rem .4rem 2rem 0;
+    margin: 2rem .4rem 3rem 0;
      width: 3.6rem;
     height: 3.6rem;
    }
