@@ -1289,7 +1289,7 @@ span{
     }
 
     .social-media a {
-    margin: 2rem 1rem 3rem 0;
+    margin: 2rem .8rem 2rem 0;
    }
 
     .logo-img img{
@@ -1504,7 +1504,14 @@ span{
     box-shadow: 0 0 1rem var(--main-color);
 }
 
+@media (max-width: 450px){
+      .social-media-3 a {
+    margin: 2rem .8rem 3rem 0;
+   }
 
+    
+
+}
 
 
 
